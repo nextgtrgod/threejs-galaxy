@@ -40,6 +40,7 @@ export default class Sketch {
 		this.renderer = new THREE.WebGLRenderer({
 			canvas: this.canvas,
 			antialias: true,
+			powerPreference: 'high-performance',
 		})
 		this.renderer.setSize(W, H)
 		this.renderer.setPixelRatio(dpr)

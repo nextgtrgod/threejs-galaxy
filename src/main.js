@@ -20,6 +20,7 @@ if (isIframe) {
 	let trusted = [
 		'http://localhost:8080',
 		'https://nextgtrgod.github.io',
+		'https://nextgtrgod-experiments.vercel.app/',
 	]
 
 	window.addEventListener('message', e => {
@@ -37,9 +38,8 @@ if (isIframe) {
 } else {
 	sketch.start()
 
-	let gui = createGui()
-
-	gui.on('change', ({ last }) => {
-		if (last) sketch.restart()
-	})
+	if (window.innerWidth >= 720)
+		createGui({
+			onFinishChange: () => sketch.restart(),
+		})
 }

@@ -10,7 +10,7 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
-    "three": "^0.133.1",
-    "tweakpane": "^3.0.5"
+    "lil-gui": "^0.13.0",
+    "three": "^0.133.1"
   }
 }

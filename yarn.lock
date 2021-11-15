@@ -134,6 +134,11 @@ is-core-module@^2.2.0:
   dependencies:
     has "^1.0.3"
 
+lil-gui@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/lil-gui/-/lil-gui-0.13.0.tgz#5e4b0f21060d7b38d89f36e3cb7ee12746d1d5b7"
+  integrity sha512-kvWEdHWizf9ElLOPyJLZjrZ1iPq2XniWGDM1sr5CTUjWjAVTdvJ83WyMVWofyppXtZkhQg0jrYoDaelyl0PHQQ==
+
 nanoid@^3.1.28:
   version "3.1.30"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.30.tgz#63f93cc548d2a113dc5dfbc63bfa09e2b9b64362"
@@ -182,11 +187,6 @@ three@^0.133.1:
   version "0.133.1"
   resolved "https://registry.yarnpkg.com/three/-/three-0.133.1.tgz#5606f4817d67a09d9212d4ccbd6826564774f8f4"
   integrity sha512-WydohO8ll949B0FTD6MGz59Yv2Lwj8hvObg/0Heh2r42S6+tQC1WByfCNRdmG4D7+odfGod+n8JPV1I2xrboWw==
-
-tweakpane@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/tweakpane/-/tweakpane-3.0.5.tgz#0dc76ac129b4b771dc6491558aec6e5516984946"
-  integrity sha512-HivFjOs510RbZSNgxv4x5LVFsHFN1ryfgpOp3n6wrgg1jLxbdlA/UTIbTLi/DYH7g76rGQqW/+IRmHPfjIujpQ==
 
 vite@^2.6.4:
   version "2.6.10"
