@@ -20,7 +20,7 @@ if (isIframe) {
 	let trusted = [
 		'http://localhost:8080',
 		'https://nextgtrgod.github.io',
-		'https://nextgtrgod-experiments.vercel.app/',
+		'https://nextgtrgod-experiments.vercel.app',
 	]
 
 	window.addEventListener('message', e => {
