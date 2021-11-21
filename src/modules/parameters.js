@@ -1,12 +1,10 @@
 
 const parameters = {
 	count: 100000,
-	size: .01,
-	radius: 10,
-	branches: 9,
-	spin: 1,
-	randomness: 1.55,
-	randomnessPower: 4.75,
+	radius: 5,
+	branches: 7,
+	randomness: .15,
+	randomnessPower: 3.5,
 	innerColor: '#ff5555',
 	outerColor: '#55f5ff',
 }
