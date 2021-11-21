@@ -11,6 +11,7 @@ let W = window.innerWidth
 let H = window.innerHeight
 let dpr = parseInt((new URL(document.location)).searchParams.get('dpr')) || window.devicePixelRatio
 let rafId = 0
+let startTime = 30
 
 export default class Sketch {
 	constructor({ canvas }) {
@@ -118,7 +119,7 @@ export default class Sketch {
 			vertexShader: vertex,
 			fragmentShader: fragment,
 			uniforms: {
-				uTime: { value: 0 },
+				uTime: { value: startTime },
 				uSize: { value: 16 * this.renderer.getPixelRatio() },
 			},
 		})
@@ -131,7 +132,7 @@ export default class Sketch {
 		rafId = requestAnimationFrame(this.animate.bind(this))
 		const elapsedTime = clock.getElapsedTime()
 
-		this.galaxy.material.uniforms.uTime.value = 30 + elapsedTime
+		this.galaxy.material.uniforms.uTime.value = startTime + elapsedTime
 		// this.galaxy.rotation.y = -elapsedTime * 0.33
 
 		this.draw()
